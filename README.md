@@ -31,4 +31,4 @@ All there is to it, is creating a new instance and calling its `GetNextIDClaim` 
 ```csharp
 IDClaimManager manager = new IDClaimManager("dbo", "Log", 1000, 900, "FancyApplication");
 ```
-In this example, `1000` refers to the size of the ranges to claim; `900` after how many claims the manager should start claiming the next range and `FancyApplication` as the requestor, to support tracing back which application has been responsible for the claimed ranges.
+In this example, `1000` refers to the size of the ranges to claim; `900` after how many claims the manager should start claiming the next range to improve continuity and `FancyApplication` as the requestor, to support tracing back which application has been responsible for the claimed ranges.
