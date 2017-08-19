@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[IDClaimHistory]
+(
+  [ID] BIGINT NOT NULL,
+  [IssueDate] DATETIME2(2) NOT NULL,
+  [RangeStart] BIGINT NOT NULL,
+  [RangeEnd] BIGINT NOT NULL,
+  [Requestor] VARCHAR(64) NOT NULL,
+
+  CONSTRAINT [pkIDClaimHistory] PRIMARY KEY NONCLUSTERED ([ID], [IssueDate] DESC),
+  CONSTRAINT [fkIDClaimHistory_IDClaim] FOREIGN KEY ([ID]) REFERENCES [dbo].[IDClaim]([ID])
+) WITH (MEMORY_OPTIMIZED = ON, DURABILITY = SCHEMA_AND_DATA);
