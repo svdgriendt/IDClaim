@@ -58,4 +58,8 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="IDClaim.sql" />
+    <Build Include="IDClaimHistory.sql" />
+  </ItemGroup>
 </Project>
