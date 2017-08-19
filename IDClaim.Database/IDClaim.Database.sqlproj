@@ -61,5 +61,8 @@
   <ItemGroup>
     <Build Include="IDClaim.sql" />
     <Build Include="IDClaimHistory.sql" />
+    <Build Include="CreateClaim.sql" />
+    <Build Include="RequestClaim.sql" />
+    <Build Include="NewStartFreeRangeType.sql" />
   </ItemGroup>
 </Project>
